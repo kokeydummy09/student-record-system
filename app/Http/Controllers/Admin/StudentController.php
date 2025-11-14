@@ -10,8 +10,9 @@ class StudentController extends Controller
 {
     public function index()
     {
-        $students = Students::latest()->take(50)->get();
-        return view('admin.students.index',  compact('students'));
+        $perPage = 10; // change as needed or read from request('per_page')
+        $students = Students::latest()->paginate($perPage)->withQueryString();
+        return view('admin.students.index', compact('students'));
     }
 
     /**

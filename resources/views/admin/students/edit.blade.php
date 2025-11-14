@@ -20,12 +20,6 @@
 
             <div class="grid grid-cols-1 gap-3">
                 <div>
-                    <label class="label"><span class="label-text">Student ID</span></label>
-                    <input type="text" name="student_id" value="{{ $student->student_id }}"
-                        class="input input-bordered w-full" readonly />
-                </div>
-
-                <div>
                     <label class="label"><span class="label-text">Full name</span></label>
                     <input type="text" name="full_name" value="{{ old('full_name', $student->full_name) }}"
                         class="input input-bordered w-full" required />

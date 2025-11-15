@@ -4,6 +4,12 @@ A simple Student Record System built with Laravel and MySQL implementing full CR
 
 ---
 
+## Test Account
+- Email: test@example.com
+- password: test@password
+
+---
+
 ## Features
 
 - Student CRUD: Create, Read, Update, Delete student records.
